@@ -92,7 +92,7 @@ class inicarSesionViewController: UIViewController, GIDSignInUIDelegate {
                     
                 })*/
                 
-                let alerta = UIAlertController(title: "Error", message: "Se presento el siguiente error al iniciar sesion: \(error)", preferredStyle: .alert)
+                let alerta = UIAlertController(title: "Error", message: "Usuario no detectado, cree una cuenta porfavor", preferredStyle: .alert)
                 let btnCrear = UIAlertAction(title: "Crear", style: .default, handler: {
                     (UIAlertAction) in
                     self.performSegue(withIdentifier: "crearusuariosegue", sender: nil)

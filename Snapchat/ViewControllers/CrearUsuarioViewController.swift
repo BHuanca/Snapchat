@@ -39,13 +39,12 @@ class CrearUsuarioViewController: UIViewController {
                     self.present(alert, animated: true)
                 }else{
                     //print("El usuario fue creado exitosamente!")
-                    Database.database().reference().child("usuarios").child(user!.user.uid).child("email").setValue(user!.user.email)
-                    Database.database().reference().child("usuarios").child(user!.user.uid).child("nombre").setValue(self.nombreTextField.text!)
-                    Database.database().reference().child("usuarios").child(user!.user.uid).child("apellidos").setValue(self.apellidosTextField.text!)
-                    Database.database().reference().child("usuarios").child(user!.user.uid).child("telefono").setValue(self.telefonoTextField.text!)
-                    Database.database().reference().child("usuarios").child(user!.user.uid).child("sexo").setValue(self.sexoTextField.text!)
                     
-                    let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario: \(self.emailTextField.text!) se creo correctamente", preferredStyle: .alert)
+                    let informacion = ["email" : user!.user.email, "nombre" : self.nombreTextField.text!, "apellidos" : self.apellidosTextField.text!, "telefono" : self.telefonoTextField.text!, "sexo" : self.sexoTextField.text!]
+
+                    Database.database().reference().child("usuarios").child(user!.user.uid).setValue(informacion)
+                    
+                    let alerta = UIAlertController(title: "Exito", message: "Se registro correctamente", preferredStyle: .alert)
                     let btnOK = UIAlertAction(title: "Aceptar", style: .default, handler: {
                         (UIAlertAction) in
                         self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)

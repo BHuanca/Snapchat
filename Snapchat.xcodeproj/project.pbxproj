@@ -20,6 +20,8 @@
 		F3F7D484228DF4DC00EB0C56 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D483228DF4DC00EB0C56 /* ImagenViewController.swift */; };
 		F3F7D486228E048400EB0C56 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D485228E048400EB0C56 /* ElegirUsuarioViewController.swift */; };
 		F3F7D48A228E07FF00EB0C56 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D489228E07FF00EB0C56 /* Usuario.swift */; };
+		F3FD64CF22972C0700B420BA /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD64CE22972C0700B420BA /* Snap.swift */; };
+		F3FD64D1229732C900B420BA /* VerSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FD64D0229732C900B420BA /* VerSnapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		F3F7D483228DF4DC00EB0C56 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
 		F3F7D485228E048400EB0C56 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
 		F3F7D489228E07FF00EB0C56 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		F3FD64CE22972C0700B420BA /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		F3FD64D0229732C900B420BA /* VerSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerSnapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				F310A1A22284B38A00ABA6F5 /* IniciarSesionViewController.swift */,
 				F3F7D481228DF05900EB0C56 /* SnapsViewController.swift */,
 				F3E1CD032292F1EB009AE518 /* CrearUsuarioViewController.swift */,
+				F3FD64D0229732C900B420BA /* VerSnapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F7D489228E07FF00EB0C56 /* Usuario.swift */,
+				F3FD64CE22972C0700B420BA /* Snap.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -226,6 +233,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -289,9 +297,11 @@
 				F3F7D484228DF4DC00EB0C56 /* ImagenViewController.swift in Sources */,
 				F3F7D48A228E07FF00EB0C56 /* Usuario.swift in Sources */,
 				F310A1A12284B38A00ABA6F5 /* AppDelegate.swift in Sources */,
+				F3FD64D1229732C900B420BA /* VerSnapViewController.swift in Sources */,
 				F3E1CD042292F1EB009AE518 /* CrearUsuarioViewController.swift in Sources */,
 				F3F7D482228DF05900EB0C56 /* SnapsViewController.swift in Sources */,
 				F3F7D486228E048400EB0C56 /* ElegirUsuarioViewController.swift in Sources */,
+				F3FD64CF22972C0700B420BA /* Snap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
