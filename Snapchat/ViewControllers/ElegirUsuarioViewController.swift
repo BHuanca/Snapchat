@@ -17,6 +17,12 @@ class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITa
     var descrip = ""
     var imagenID = ""
     
+    var AudioURL = ""
+    var descripAudio = ""
+    var AudioID = ""
+    
+    var Recibido = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         listaUsuarios.delegate = self
@@ -48,11 +54,22 @@ class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITa
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let usuario = usuarios[indexPath.row]
-        let snap = ["from" : Auth.auth().currentUser?.email, "descripcion" : descrip, "imagenURL": imagenURL, "imagenID" : imagenID]
+        let snap = Snap()
         
-        Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snap)
+        let usuario = usuarios[indexPath.row]
+        let snapImagen = ["from" : Auth.auth().currentUser?.email, "descripcion" : descrip, "imagenURL": imagenURL, "imagenID" : imagenID, "AudioURL": AudioURL, "AudioID" : AudioID]
+        
+        //let snapAudio = ["from" : Auth.auth().currentUser?.email, "descripcion" : descripAudio, "AudioURL": AudioURL, "AudioID" : AudioID]
+        
+    Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snapImagen)
+        
+        
+        /*else {
+            Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snapAudio)
+        }*/
+        
         navigationController?.popViewController(animated: true)
+        
     }
 
 }

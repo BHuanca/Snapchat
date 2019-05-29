@@ -16,6 +16,8 @@
 		F310A1B32284B54900ABA6F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F310A1B22284B54900ABA6F5 /* GoogleService-Info.plist */; };
 		F310A1B72284C19500ABA6F5 /* usuario.png in Resources */ = {isa = PBXBuildFile; fileRef = F310A1B62284C19500ABA6F5 /* usuario.png */; };
 		F3E1CD042292F1EB009AE518 /* CrearUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E1CD032292F1EB009AE518 /* CrearUsuarioViewController.swift */; };
+		F3F5D828229DC2770083CA6E /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5D827229DC2770083CA6E /* AudioViewController.swift */; };
+		F3F5D82A229DD6070083CA6E /* Snap2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5D829229DD6070083CA6E /* Snap2.swift */; };
 		F3F7D482228DF05900EB0C56 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D481228DF05900EB0C56 /* SnapsViewController.swift */; };
 		F3F7D484228DF4DC00EB0C56 /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D483228DF4DC00EB0C56 /* ImagenViewController.swift */; };
 		F3F7D486228E048400EB0C56 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F7D485228E048400EB0C56 /* ElegirUsuarioViewController.swift */; };
@@ -38,6 +40,8 @@
 		F310A1B22284B54900ABA6F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F310A1B62284C19500ABA6F5 /* usuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = usuario.png; path = ../../../../Downloads/usuario.png; sourceTree = "<group>"; };
 		F3E1CD032292F1EB009AE518 /* CrearUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsuarioViewController.swift; sourceTree = "<group>"; };
+		F3F5D827229DC2770083CA6E /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		F3F5D829229DD6070083CA6E /* Snap2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2.swift; sourceTree = "<group>"; };
 		F3F7D480228DEDBE00EB0C56 /* Snapchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snapchat.entitlements; sourceTree = "<group>"; };
 		F3F7D481228DF05900EB0C56 /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		F3F7D483228DF4DC00EB0C56 /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				F3F7D481228DF05900EB0C56 /* SnapsViewController.swift */,
 				F3E1CD032292F1EB009AE518 /* CrearUsuarioViewController.swift */,
 				F3FD64D0229732C900B420BA /* VerSnapViewController.swift */,
+				F3F5D827229DC2770083CA6E /* AudioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			children = (
 				F3F7D489228E07FF00EB0C56 /* Usuario.swift */,
 				F3FD64CE22972C0700B420BA /* Snap.swift */,
+				F3F5D829229DD6070083CA6E /* Snap2.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -297,11 +303,13 @@
 				F3F7D484228DF4DC00EB0C56 /* ImagenViewController.swift in Sources */,
 				F3F7D48A228E07FF00EB0C56 /* Usuario.swift in Sources */,
 				F310A1A12284B38A00ABA6F5 /* AppDelegate.swift in Sources */,
+				F3F5D82A229DD6070083CA6E /* Snap2.swift in Sources */,
 				F3FD64D1229732C900B420BA /* VerSnapViewController.swift in Sources */,
 				F3E1CD042292F1EB009AE518 /* CrearUsuarioViewController.swift in Sources */,
 				F3F7D482228DF05900EB0C56 /* SnapsViewController.swift in Sources */,
 				F3F7D486228E048400EB0C56 /* ElegirUsuarioViewController.swift in Sources */,
 				F3FD64CF22972C0700B420BA /* Snap.swift in Sources */,
+				F3F5D828229DC2770083CA6E /* AudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
